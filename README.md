@@ -1,0 +1,3 @@
+### Overview
+
+The Civic Monitor App aims to serve as a Legislative Activity Monitor.  It will enable citizens, legislative aids, and activists to add data on micro-level legislative activities, tracking speeches, questions, and other activities related to any issue or topic.  The data is publicly available for individuals to search, filter, and investigate how legislators are advocating for certain issues.
