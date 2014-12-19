@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Civic_monitor": {
+            "applicationId": "VPSpAF9cp0AkgyixZROE7cqOumFEkUEzGCce0j3p", 
+            "masterKey": "TekH1JgriLzpB4D7cERnEd94FKzdWgnaO81Zd7iN"
+        }, 
+        "_default": {
+            "link": "Civic_monitor"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.2"
+    }
+}
