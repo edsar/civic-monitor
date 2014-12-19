@@ -1,21 +1,37 @@
-
 <html>
-  <head>
-    <title>My ParseApp site</title>
-    <style>
-    body { font-family: Helvetica, Arial, sans-serif; }
-    div { width: 800px; height: 400px; margin: 40px auto; padding: 20px; border: 2px solid #5298fc; }
-    h1 { font-size: 30px; margin: 0; }
-    p { margin: 40px 0; }
-    em { font-family: monospace; }
-    a { color: #5298fc; text-decoration: none; }
-    </style>
-  </head>
-  <body>
-    <div>
-      <h1>Congratulations! You're already hosting with Parse.</h1>
-      <p>To get started, edit this file at <em>public/index.html</em> and start adding static content.</p>
-      <p>If you want something a bit more dynamic, delete this file and check out <a href="https://parse.com/docs/hosting_guide#webapp">our hosting docs</a>.</p>
-    </div>
-  </body>
-</html>
+    <link rel="stylesheet" type="text/css" href="http://civtrade.com/other/stylenew.css?59">
+    <head><title>JS Testing</title></head><body class="bodystatic"><br>
+
+    <div class="panel panel-primary">
+            <div class="panel-heading">Submit new record</div>
+            <div style="padding:1%"><form method="post" action="/actions/submit.php"> <br> 
+            <!-- Output senators -->
+                <select class="form-control" name="senator">
+                  <option value="selectRep" disabled selected>Select a represenitive</option>
+                  <option value="John">John</option>
+                  <option value="Alex">Alex</option>
+                  <option value="Sally">Sally</option>
+                  <option value="Cathy">Cathy</option>
+                </select><br>
+                
+            <!-- Output actions -->
+                <select class="form-control" name="action">
+                  <option value="selectOption" disabled selected>Select an action</option>
+                  <option value="yes">Voted yes</option>
+                  <option value="no">Voted no</option>
+                  <option value="lied">Contradicted something they said earlier</option>
+                
+            <!-- Output bills -->
+                </select><br><select class="form-control" name="bill">
+                  <option value="selectBill" disabled selected>Select a bill</option>
+                  <option value="I-803">I-803</option>
+                  <option value="Q-529">Q-529</option>
+                  <option value="H-94">H-94</option>
+                </select><br>
+                
+            <!-- Output notes -->
+                <textarea class="form-control" name="notes" placeholder="Notes"></textarea><br> 
+                
+            <button type="submit" class="btn btn-primary">Submit</button> 
+        </form>
+    </div></div>
