@@ -11,7 +11,7 @@ app.use(express.bodyParser());
 app.use(express.cookieParser('CONVERTICS'));
 app.use(parseExpressCookieSession({ cookie: { maxAge: 3600000 } }));
 
-app.get('/submitData', function(req, res) {
+app.get('/submit', function(req, res) {
 	var newData = Parse.Object.extend("newData");
 	var newData = new newData();
  

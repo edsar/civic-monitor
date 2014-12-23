@@ -200,6 +200,25 @@ app.get('/fullresults', function(req, res) {
 	}
 });
 
+app.get('/submit', function(req, res) {
+	var newData = Parse.Object.extend("newData");
+	var newData = new newData();
+ 
+	newData.set("senator", request.body.user.senator);
+	newData.set("action", request.body.user.action);
+	newData.set("bill", request.body.user.bill);
+ 
+newData.save(null, {
+  success: function(newData) {
+    // Execute any logic that should take place after the object is saved.
+    alert('Data saved');
+  },
+  error: function(newData, error) {
+    // Execute any logic that should take place if the save fails.
+    alert('Failed to save data, please try again'); //Developer errors shouldn't be in release builds 
+  }
+});
+
 app.listen();
 
 
